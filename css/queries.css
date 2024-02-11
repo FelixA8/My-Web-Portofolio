@@ -3,6 +3,13 @@
 /**********************/
 
 @media (max-width: 84em) {
+  .index-main {
+    margin-top: 8rem;
+  }
+  .aboutme-main {
+    margin-top: 0rem;
+  }
+  
   .hero {
     max-width: 120rem;
   }
@@ -22,8 +29,40 @@
   html {
     font-size: 55%;
   }
+  .code-container {
+    font-size: 2.4rem;
+  }
+
+  .aboutme-main {
+    margin-top: 0rem !important;
+  }
+  .d00 { 
+    left: 0px;
+  }
+  
+  .d01 { 
+    left: 0px;
+  }
+  
+  .d02 { 
+    left: 0px;
+  }
+  
+  .d03 { 
+    left: 0px;
+  }
+  
+  .d04 { 
+    left: 0px;
+  }
   .heading-secondary {
     font-size: 3rem;
+  }
+  .header p{
+    font-size: 80%;
+  }
+  .main-nav-link:link, .main-nav-link:visited {
+    font-size: 1.8rem;
   }
   .hero {
     gap: 4.8rem;
@@ -45,8 +84,18 @@
 /* BELOW 944 pixels (For Tablets) */
 /**********************/
 @media (max-width: 62em) {
+  .about-hero {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .aboutme-main {
+    margin-top: 0rem;
+  }
   html {
     font-size: 50%;
+  }
+  .code-container {
+    width: 100%;
   }
   .hero {
     padding: 0 0rem 0 3.2rem;
@@ -69,6 +118,9 @@
   .footer-img {
     width: 100%;
   }
+  .about-hero-img {
+    width: 40% !important;
+  }
 }
 
 /**********************/
@@ -76,9 +128,21 @@
 /**********************/
 
 @media (max-width: 51em) {
+  .code-containers {
+    width: 70%;
+  }
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
+  }
+  .event-title {
+    font-size: 1.6rem;
+  }
+  .event-role {
+    font-size: 1.2rem;
+  }
+  .header p{
+    font-size: 100%;
   }
   .main-nav {
     background-color: rgb(8, 1, 17, 0.9);
@@ -102,10 +166,10 @@
     align-items: start;
     flex-direction: column;
   }
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .fixed.nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .fixed.nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
   .nav-open .main-nav {
@@ -247,6 +311,7 @@
   .footer-img {
     width: 100%;
   }
+  
 }
 
 /**********************/
@@ -289,7 +354,7 @@
     font-size: 1.2rem;
   }
   .code-img {
-    width: 60%;
+    width: 40%;
   }
   
   .section-achievement {
@@ -354,10 +419,9 @@
   .footer-sub-grid {
     display: flex;
     justify-content: center;
-    gap: 1rem;
   }
   .footer-img {
-    width: 100%;
+    width: 60%;
   }
   .sub-container {
     width: 70%;

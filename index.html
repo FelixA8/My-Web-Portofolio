@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/aboutme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,18 @@
     <title>Never Surrender</title>
   </head>
   <body>
+    <div class="loading-screen">
+      <div class="code-containers">
+        <div class="num">01001010011000010010000001101010011000010010000001100100011001010110100101101110011001010010000001001101011101010111010001110100011001010111001000100001
+        </div>
+        <div class="devider d00"></div>
+        <div class="devider d01"></div>
+        <div class="devider d02"></div>
+        <div class="devider d03"></div>
+        <div class="devider d04"></div>
+      </div>
+      <button class="aboutme-button btn--aboutme">Start</button>
+    </div>
     <header class="header">
       <a class="text-logo" href="#contact">
         <p>Website Portofolio</p>
@@ -24,6 +37,9 @@
           <li><a class="main-nav-link" href="#experience">Experience</a></li>
           <li><a class="main-nav-link" href="#project">Projects</a></li>
           <li><a class="main-nav-link" href="#achievement">Achievements</a></li>
+
+          <li><a class="main-nav-link" href="aboutme.html">About me</a></li>
+
           <li>
             <a class="main-nav-link nav-cta" href="#contact">Contact me</a>
           </li>
@@ -34,14 +50,15 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-    <main>
+    <main class="index-main">
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">Felix Anderson</h1>
-            <p class="hero-description">
-              A second year student at Binus University
-            </p>
+            <div class="animated-text">
+              <p class="hero-description">I'm a <span></span></p>
+            </div>
+
             <a href="#experience" class="btn btn--full">Get Started &darr;</a>
           </div>
           <div class="hero-img-box">
@@ -294,7 +311,7 @@
                 furniture that are sold in the app, purchasing the product using
                 a simple cart system and check their purchase history. User also
                 can edit their username or address.
-                <span class="break"><wbr></span>
+                <span class="break"><wbr /></span>
                 <span class="break">
                   Our app has an augmented reality feature powered by Google
                   ARCore that is implemented in every product. With this
@@ -337,7 +354,11 @@
                 Peraih Insentif bidang PKM-GFT Program Kreativitas Mahasiswa
                 (PKM) Tahun 2023
               </p>
-              <a href="https://drive.google.com/uc?export=download&id=1fG4QbeolN-Jd50_7I8Ae6bcHvqhm619j" class="btn btn--full long-size">See Credentials</a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fG4QbeolN-Jd50_7I8Ae6bcHvqhm619j"
+                class="btn btn--full long-size"
+                >See Credentials</a
+              >
             </div>
           </div>
           <p class="achievement-bottom-title">More to come...</p>
@@ -433,5 +454,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
 </html>

@@ -4,6 +4,14 @@
   color: #fff;
 }
 
+.hide {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -11,12 +19,156 @@
   background-color: #280456;
   height: 9.6rem;
   padding: 0 4.8rem;
-  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 5;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.loading-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #080111;
+}
+
+.code-containers {
+  border-radius: 30px;
+  background: #080111;
+  color: white;
+  font-family: 'PT Mono','Courier';
+  font-weight: 400;
+  letter-spacing:1px;
+  font-size:2rem;
+  width: 675px;
+  overflow: hidden;
+  perspective-origin: center left;
+  perspective: 100px;
+  text-shadow: 0 0 2px #fff;
+  line-height: 25px;
+  margin: 9.6rem auto 2.4rem;
+}
+
+.num {
+  clear: both;
+  transform: rotateY(0deg);
+}
+
+.devider {
+  position: absolute;
+  top:0;
+  width: 14px;
+  height: 100%;
+  background-color: #080111;
+}
+
+
+
+.d00 { 
+  left: 103px;
+}
+
+.d01 { 
+  left: 219px;
+}
+
+.d02 { 
+  left: 337px;
+}
+
+.d03 { 
+  left: 453px;
+}
+
+.d04 { 
+  left: 557px;
+}
+
+.btn--aboutme {
+  margin: 0 auto; 
+  background-color: #7E689A;
+  width: 30%;
+  padding: 2rem 0;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2.8rem;
+  border: none;
+  border-radius: 9px;
+  transition: all 0.5s;
+  cursor: pointer;
+  transition: 1s all;
 }
 
 /**********************/
 /* HERO SECTION */
 /**********************/
+
+/* ANIMATED TEXT */
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "Student";
+  color: #eae6ee;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #280456;
+  border-left: 2px solid #eae6ee;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "Student";
+  }
+  21%,40%{
+      content: "Developer";
+  }
+  41%,60%{
+      content: "Designer";
+  }
+  61%,80%{
+      content: "Leader";
+  }
+  81%,100%{
+      content: "Tech Enthusiast";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
+
+.hero-description span {
+  font-weight: 600;
+}
 
 /* MOBILE */
 .btn-mobile-nav {
@@ -91,8 +243,6 @@
   position: relative;
   float: right;
 }
-
-
 
 /**********************/
 /* EXPERIENCE SECTION AND ACTIVE ORGANIZATION */
@@ -270,8 +420,7 @@
   font-size: 2rem;
   line-height: 1.6;
   display: block;
-  background-color: rgb(40, 4, 86, 0);
-  color: rgba(255, 255, 255, 0);
+  color: rgb(8, 1, 17, 100);
   padding: 0.4rem 0rem;
   width: 50%;
   margin-top: 1.6rem;
@@ -295,6 +444,7 @@
 .project-container {
   padding: 9.6rem 0;
   align-items: center;
+
 }
 
 .project-title {
@@ -342,7 +492,7 @@
 .achievement-card {
   width: 25%;
   box-shadow: 0 2.4rem 4.8rem rgba(255, 255, 255, 0.075);
-  background-color: #000;
+  background-color: #080111;
   margin: 4.8rem auto;
   overflow: hidden;
   border-radius: 10px;
@@ -471,3 +621,4 @@ footer {
   background-color: #fff;
   color: #333;
 }
+
