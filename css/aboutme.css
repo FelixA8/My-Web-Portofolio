@@ -9,6 +9,10 @@
   animation: all 1s;
 }
 
+.fixed {
+  position: fixed;
+}
+
 
 .about-section-hero {
   background-color: #280456;

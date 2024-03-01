@@ -8,12 +8,20 @@
   display: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #280456;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  width: 100%;
+  height: 8rem;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .header {
   justify-content: space-between;
   align-items: center;
   background-color: #280456;
@@ -25,6 +33,8 @@
   height: 8rem;
   z-index: 5;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  position: fixed;
+  background-color: #280456;
 }
 
 .loading-screen {
@@ -249,7 +259,8 @@
 /**********************/
 
 .section-experience {
-  padding: 9.6rem 0;
+  padding-top: 19rem;
+  padding-bottom: 9.6rem;
 }
 
 .section-active-organization {
